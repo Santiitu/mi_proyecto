@@ -1,0 +1,248 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px; }
+
+.ClearFix {
+  clear: both; }
+
+/*--Pagina principal--*/
+.Logo {
+  width: 70px; }
+
+.Titulo {
+  background: linear-gradient(to left, white, black);
+  width: 100%; }
+
+h1 {
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+  color: white; }
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: #000;
+  padding-left: 10px; }
+
+.Menu__animacion {
+  background: linear-gradient(to left, #aca0a0, #6b6b2c); }
+
+.li {
+  display: inline-block; }
+
+.Home__carousel {
+  text-align: center;
+  margin: auto;
+  width: 50%; }
+
+/*--Primeras imagenes, con productos destacados. Estos podrian llevar a la segunda pagina 
+con el resto de los productos. Enlazada con la pagina "Productos--*/
+article {
+  background: linear-gradient(to left, #aca0a0, #6b6b2c);
+  width: 100%; }
+
+.Container-productos {
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+.card__product {
+  margin: auto;
+  margin-top: 5px; }
+
+.card__product .card-body {
+  background-color: white; }
+
+@media (max-width: 375px) {
+  .Container-productos {
+    display: block;
+    justify-content: center; } }
+
+@media (max-width: 768px) {
+  .Container-productos {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: auto; }
+  .card__product {
+    margin-top: 5px; } }
+
+/*-- Pagina Productos. Todas las remeras. Hay que enlazar todos los productos, con una sola visualizacion. --*/
+/*-- Pagina Contacto. Footer. --*/
+.footer {
+  width: 100%; }
+
+.container-footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  margin: auto; }
+
+.footer__all {
+  display: flex;
+  justify-content: space-between;
+  margin: auto; }
+
+.footer__all .Footer__Button {
+  background: linear-gradient(to right, #3072ec, #d6d6d2);
+  margin-bottom: 10px; }
+
+.div1 {
+  max-width: 300px;
+  text-align: center;
+  font-size: 18px; }
+
+.div2 {
+  max-width: 300px;
+  text-align: center;
+  font-size: 20px; }
+
+.div3 {
+  max-width: 300px;
+  font-size: 40px; }
+
+.div4 {
+  max-width: 300px; }
+
+.div4 img {
+  width: 150px; }
+
+.Footer__end {
+  background-color: #1b1919;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px; }
+
+.div5 {
+  color: white; }
+
+.div6 a:hover {
+  color: white; }
+
+@media (max-width: 375px) {
+  .footer__all {
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+@media (max-width: 768px) {
+  .footer__all {
+    justify-content: center; }
+  .div4 img {
+    width: 100%; } }
+
+.Seguinos:hover {
+  color: white; }
+
+/*-- Pagina de Contacto - Formulario para usuarios y notificaciones --*/
+.titulo-contacto {
+  width: 100%; }
+
+.Contacto {
+  background: linear-gradient(to left, #aca0a0, #6b6b2c);
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.Column1 {
+  margin: auto;
+  padding: 20px;
+  text-align: center; }
+
+.Column1 a {
+  font-size: 40px; }
+
+.Column2 {
+  margin: auto;
+  padding: 20px; }
+
+.Column2 .Form input {
+  background: linear-gradient(to right, #3072ec, #d6d6d2); }
+
+@media (max-width: 375px) {
+  .Contacto {
+    display: block;
+    justify-content: center; } }
+
+@media (max-width: 768px) {
+  .Contacto {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: auto; } }
+
+/*-- Pagina Talles. informacion tecnica de las remeras. --*/
+.Table__talles {
+  background: linear-gradient(to left, #aca0a0, #6b6b2c);
+  font-size: 30px; }
+
+.Table__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+
+table {
+  border: solid #000; }
+
+tr {
+  margin: 5px; }
+
+.Table__col1 {
+  margin: auto; }
+
+.Table__col2 {
+  font-size: 20px;
+  padding: 20px;
+  text-align: left; }
+
+.Table__col2 label {
+  color: white; }
+
+@media (max-width: 375px) {
+  .Table__container {
+    display: block;
+    justify-content: center;
+    padding: 15px; } }
+
+@media (max-width: 768px) {
+  .Table__container {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: auto; } }
+
+/*-- Pagina Nosotros. Breve reseña de la emrpesa, con un video ilustrativo --*/
+.Nosotros-container {
+  background: linear-gradient(to left, #aca0a0, #6b6b2c);
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr; }
+
+.Nosotros__Titulo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: #000; }
+
+.Nosotros__texto {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px; }
+
+.Nosotros_rocco {
+  text-align: center; }
+
+.Nosotros_rocco img {
+  height: 400px;
+  width: auto; }
+
+@media (max-width: 375px) {
+  .Nosotros-container {
+    display: block;
+    padding: 15px;
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .Nosotros-container {
+    display: block;
+    margin: auto; } }
