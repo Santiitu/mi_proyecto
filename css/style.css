@@ -62,6 +62,16 @@ article {
     display: block;
     justify-content: center; } }
 
+@media (max-width: 414px) {
+  .Container-productos {
+    display: block;
+    justify-content: center; } }
+
+@media (max-width: 545px) {
+  .Container-productos {
+    display: block;
+    justify-content: center; } }
+
 @media (max-width: 768px) {
   .Container-productos {
     grid-template-columns: 1fr 1fr 1fr;
@@ -127,6 +137,18 @@ article {
 @media (max-width: 375px) {
   .footer__all {
     flex-wrap: wrap;
+    justify-content: center; }
+  .footer__all .div4 img {
+    width: 50px; } }
+
+@media (max-width: 414px) {
+  .footer__all {
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+@media (max-width: 545px) {
+  .footer__all {
+    flex-wrap: wrap;
     justify-content: center; } }
 
 @media (max-width: 768px) {
@@ -167,6 +189,20 @@ article {
     display: block;
     justify-content: center; } }
 
+@media (max-width: 414px) {
+  .Contacto {
+    display: block;
+    justify-content: center; }
+  .Contacto .Column2 {
+    padding-left: 20px; } }
+
+@media (max-width: 545px) {
+  .Contacto {
+    display: block;
+    justify-content: center; }
+  .Contacto .Column2 {
+    padding-left: 20px; } }
+
 @media (max-width: 768px) {
   .Contacto {
     grid-template-columns: 1fr 1fr;
@@ -204,6 +240,17 @@ tr {
   .Table__container {
     display: block;
     justify-content: center;
+    padding: 15px; } }
+
+@media (max-width: 414px) {
+  .Table__container {
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media (max-width: 545px) {
+  .Table__container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 15px; } }
 
 @media (max-width: 768px) {
